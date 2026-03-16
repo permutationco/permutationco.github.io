@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Permutation</title>
+  <meta name="description" content="Catalyzing bold & purposeful innovation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #1C2E3B;
+      color: #ffffff;
+      font-family: 'Work Sans', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 40px;
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: 400;
+      color: #ffffff;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+    }
+
+    .twitter-link {
+      display: flex;
+      align-items: center;
+    }
+
+    .twitter-link svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    /* Hero */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      padding: 60px 40px 80px;
+    }
+
+    .hero-cube svg {
+      width: 150px;
+      height: 143px;
+    }
+
+    .hero-text h1 {
+      font-size: 28px;
+      font-weight: 300;
+      line-height: 1.4;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-text h1 strong {
+      font-weight: 600;
+    }
+
+    /* Divider */
+    .divider {
+      width: 100%;
+      max-width: 560px;
+      margin: 0 auto;
+      border: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* Portfolio */
+    .portfolio {
+      padding: 60px 40px 80px;
+      text-align: center;
+    }
+
+    .portfolio h4 {
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      margin-bottom: 50px;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px 60px;
+      max-width: 600px;
+      margin: 0 auto;
+      align-items: center;
+      justify-items: center;
+    }
+
+    .portfolio-grid a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.2s ease;
+    }
+
+    .portfolio-grid a:hover {
+      opacity: 0.7;
+    }
+
+    .portfolio-grid img {
+      width: 148px;
+      height: 148px;
+      object-fit: contain;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: auto;
+      padding: 40px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 24px;
+        padding: 40px 24px 60px;
+      }
+
+      .hero-text h1 {
+        font-size: 22px;
+      }
+
+      .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
+
+      .portfolio-grid img {
+        width: 120px;
+        height: 120px;
+      }
+
+      header {
+        padding: 20px 24px;
+      }
+
+      .portfolio {
+        padding: 40px 24px 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="https://www.permutation.co" class="logo">Permutation</a>
+    <a href="https://twitter.com/permutation_co" class="twitter-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+      <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 247 201" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" xmlns="http://www.w3.org/2000/svg">
+        <path d="M220.95 49.793c.15 2.17.15 4.34.15 6.53 0 66.73-50.8 143.69-143.69 143.69v-.04c-27.44.04-54.31-7.82-77.41-22.64 3.99.48 8 .72 12.02.73 22.74.02 44.83-7.61 62.72-21.66-21.61-.41-40.56-14.5-47.18-35.07a50.338 50.338 0 0 0 22.8-.87c-23.56-4.76-40.51-25.46-40.51-49.5v-.64a50.18 50.18 0 0 0 22.92 6.32c-22.19-14.83-29.03-44.35-15.63-67.43a143.333 143.333 0 0 0 104.08 52.76 50.532 50.532 0 0 1 14.61-48.25c20.34-19.12 52.33-18.14 71.45 2.19 11.31-2.23 22.15-6.38 32.07-12.26a50.69 50.69 0 0 1-22.2 27.93c10.01-1.18 19.79-3.86 29-7.95a102.594 102.594 0 0 1-25.2 26.16Z" fill="#ffffff" fill-rule="nonzero"/>
+      </svg>
+    </a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-cube">
+        <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 42 40" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" xmlns="http://www.w3.org/2000/svg">
+          <path d="M27.804 3.277 41.85 9.968l-.001 13.472v6.554l-20.924 9.968L0 29.994V9.968l14.046-6.691L20.925 0l6.879 3.277ZM.577 29.63l20.06 9.556v-5.915L.577 23.715v5.915Zm33.817-2.638-13.181 6.279v5.915l13.181-6.279v-5.915ZM10.792 15.473l-3.336-1.589v5.915l6.878 3.277v6.554l6.303 3.002V20.163l-9.845-4.69ZM34.97 26.717v5.915l6.303-3.002v-5.915l-6.303 3.002Zm-.576-6.918v-5.915l-13.181 6.279v12.469l6.302-3.002v-6.554l6.879-3.277Zm6.879-9.192-6.303 3.002v6.554l-6.878 3.277v5.915l13.181-6.279V10.607Zm-40.696 0v12.469l13.181 6.279V23.44l-6.879-3.277v-6.554L.577 10.607Zm20.348 3.139-6.879-3.277-6.208 2.958 3.202 1.525 9.885 4.71 13.087-6.235-6.208-2.958-.689.328-6.19 2.949ZM.959 10.15l6.208 2.958 13.088-6.235-6.209-2.958L.959 10.15Zm26.845-6.235-6.209 2.958 6.209 2.958 6.878 3.277 6.209-2.958-13.087-6.235ZM14.716 10.15l6.209 2.958 6.208-2.958-6.208-2.958-6.209 2.958Zm6.209-3.596 6.208-2.958L20.925.638l-6.209 2.958 6.209 2.958Z" fill="#ffffff"/>
+        </svg>
+      </div>
+      <div class="hero-text">
+        <h1>Catalyzing<br><strong>bold &amp; purposeful</strong><br>innovation.</h1>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="portfolio">
+      <h4>Portfolio</h4>
+      <div class="portfolio-grid">
+        <a href="https://altlayer.io/" target="_blank" rel="noopener noreferrer"><img src="images/logos/altlayer.png" alt="AltLayer" loading="lazy"></a>
+        <a href="https://anoma.net/" target="_blank" rel="noopener noreferrer"><img src="images/logos/anoma.png" alt="Anoma" loading="lazy"></a>
+        <a href="https://atomicsemi.com/" target="_blank" rel="noopener noreferrer"><img src="images/logos/atomic.png" alt="Atomic Semi" loading="lazy"></a>
+        <a href="https://www.blng.ai/" target="_blank" rel="noopener noreferrer"><img src="images/logos/blng.png" alt="BLNG" loading="lazy"></a>
+        <a href="https://blocksense.network/" target="_blank" rel="noopener noreferrer"><img src="images/logos/blocksense.png" alt="Blocksense" loading="lazy"></a>
+        <a href="https://www.cobaltai.com/" target="_blank" rel="noopener noreferrer"><img src="images/logos/cobalt.png" alt="Cobalt AI" loading="lazy"></a>
+        <a href="https://www.connext.network/" target="_blank" rel="noopener noreferrer"><img src="images/logos/connext.png" alt="Connext" loading="lazy"></a>
+        <a href="https://gateway.fm/" target="_blank" rel="noopener noreferrer"><img src="images/logos/gateway.png" alt="Gateway.fm" loading="lazy"></a>
+        <a href="https://immunefi.com/" target="_blank" rel="noopener noreferrer"><img src="images/logos/immunefi.png" alt="Immunefi" loading="lazy"></a>
+        <a href="https://www.masterclass.com/" target="_blank" rel="noopener noreferrer"><img src="images/logos/masterclass.png" alt="MasterClass" loading="lazy"></a>
+        <a href="https://www.mimic.fi/" target="_blank" rel="noopener noreferrer"><img src="images/logos/mimic.png" alt="Mimic" loading="lazy"></a>
+        <a href="https://olas.network/" target="_blank" rel="noopener noreferrer"><img src="images/logos/olas.png" alt="Olas" loading="lazy"></a>
+        <a href="https://phaver.com/" target="_blank" rel="noopener noreferrer"><img src="images/logos/phaver.png" alt="Phaver" loading="lazy"></a>
+        <a href="https://poap.xyz/" target="_blank" rel="noopener noreferrer"><img src="images/logos/poap.png" alt="POAP" loading="lazy"></a>
+        <a href="https://www.rosebud.ai/" target="_blank" rel="noopener noreferrer"><img src="images/logos/rosebud.png" alt="Rosebud AI" loading="lazy"></a>
+        <a href="https://sablier.com/" target="_blank" rel="noopener noreferrer"><img src="images/logos/sablier.png" alt="Sablier" loading="lazy"></a>
+        <a href="https://standard.ai/" target="_blank" rel="noopener noreferrer"><img src="images/logos/standardai.png" alt="Standard AI" loading="lazy"></a>
+        <a href="https://www.uber.com/" target="_blank" rel="noopener noreferrer"><img src="images/logos/uber.png" alt="Uber" loading="lazy"></a>
+        <a href="https://urbit.org/" target="_blank" rel="noopener noreferrer"><img src="images/logos/urbit.png" alt="Urbit" loading="lazy"></a>
+        <a href="https://walletconnect.com/" target="_blank" rel="noopener noreferrer"><img src="images/logos/walletconnect.png" alt="WalletConnect" loading="lazy"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Permutation</p>
+  </footer>
+
+</body>
+</html>
